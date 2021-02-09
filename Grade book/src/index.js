@@ -12,5 +12,16 @@
 // Write the function to find the getGrade obtained.
 function getGrade (s1, s2, s3) {
    //your code here
+   let avg=(parseInt(s1) + parseInt(s2) +parseInt(s3))/3
+   if (avg <= 100 && avg >= 90)
+    return 'A'
+    if(avg >= 80 && avg < 90)
+      return 'B'
+    if(avg >= 70 && avg < 80)
+      return 'C'
+    if (avg >=60 && avg < 70)
+      return 'D'
+    if(avg >= 0 && avg < 60)
+      return 'F'
   }
 //Use SpecRunner to check the Test Cases.
